@@ -57,7 +57,7 @@ def main(instance_url: str, access_token: str):
 
     # Uncomment when is_account_slop is refined
     # for follower_id in unfollow_ids:
-    #     account_remove_from_followers(follower_id)
+    #     mastodon.account_remove_from_followers(follower_id)
 
 
 if __name__ == "__main__":

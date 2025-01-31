@@ -41,7 +41,7 @@ def is_notification_follow(mastodon, notification):
 
         # Uncomment when is_account_slop is refined
         # if is_account_slop(follower):
-        #     account_remove_from_followers(follower_id)
+        #     mastodon.account_remove_from_followers(follower['id'])
 
 
     print(notification)
