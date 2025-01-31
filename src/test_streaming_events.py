@@ -38,8 +38,11 @@ def is_notification_follow(mastodon, notification):
     if notification['type'] == "follow":
         print("I have been followed")
         follower = mastodon.account(notification['account'])
-        # check if user is slop
-        print(is_account_slop(follower))
+
+        # Uncomment when is_account_slop is refined
+        # if is_account_slop(follower):
+        #     account_remove_from_followers(follower_id)
+
 
     print(notification)
 
